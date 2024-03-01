@@ -1,0 +1,91 @@
+{
+  "id": "17141389-e879-463c-a272-620f642b1085",
+  "version": "2.0",
+  "name": "m7",
+  "url": "https://main.sci.gov.in",
+  "tests": [{
+    "id": "ef034b4e-babd-46d1-82fb-71a94164f561",
+    "name": "t6",
+    "commands": [{
+      "id": "a7bdee64-6898-4198-8853-9ba569e4eb91",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2bfe906a-dd17-4419-b059-4d8e0b67f6d4",
+      "comment": "",
+      "command": "pause",
+      "target": "4000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "25e4f72a-d309-4250-8b4d-a86098c5fb01",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x670",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "039c2c1f-1b9d-4842-8c90-7b8e7ae75e1e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Latest Judgments",
+      "targets": [
+        ["linkText=Latest Judgments", "linkText"],
+        ["css=.z-tab:nth-child(3) > .z-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Latest Judgments')]", "xpath:link"],
+        ["xpath=//div[@id='tabbed-nav']/ul[2]/li[3]/a", "xpath:idRelative"],
+        ["xpath=//ul[2]/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Latest Judgments')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d540e8a9-8ac8-4469-b9f0-847f934fe86c",
+      "comment": "",
+      "command": "pause",
+      "target": "4000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ed074c21-ddb7-4308-a011-4e2abdf573c5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.z-content-inner > .scilist:nth-child(1) li:nth-child(1) span",
+      "targets": [
+        ["css=.z-content-inner > .scilist:nth-child(1) li:nth-child(1) span", "css:finder"],
+        ["xpath=//div[@id='tabbed-nav']/div/div[3]/div/div/ul/li/a/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/ul/li/a/span", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win6870",
+      "windowTimeout": 2000
+    }, {
+      "id": "a1f0d900-332c-4f7d-b5ef-c303c637ffa7",
+      "comment": "",
+      "command": "pause",
+      "target": "6000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "421bd450-f2d4-44fc-809e-8ef25690f979",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win6870}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b6f9911e-1951-4b04-906c-ecb31115385f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ef034b4e-babd-46d1-82fb-71a94164f561"]
+  }],
+  "urls": ["https://main.sci.gov.in/"],
+  "plugins": []
+}
