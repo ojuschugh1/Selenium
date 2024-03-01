@@ -1,0 +1,101 @@
+{
+  "id": "999af92b-fd20-46d2-ba45-588e2fc9e82d",
+  "version": "2.0",
+  "name": "m5",
+  "url": "https://www.incometax.gov.in",
+  "tests": [{
+    "id": "a06c37c3-7aac-4a23-aee6-099cf9ddc649",
+    "name": "t6",
+    "commands": [{
+      "id": "6d26f81e-525c-49ab-a712-f151df3913de",
+      "comment": "",
+      "command": "open",
+      "target": "/iec/foportal/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cc8a8fa6-824a-48a8-9e88-910e40cbefdc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x670",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f8beeb96-b78e-4d83-9f9b-173618934e83",
+      "comment": "",
+      "command": "pause",
+      "target": "5000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7a3c694c-9578-4d1b-a0fb-af85fd6f3f38",
+      "comment": "",
+      "command": "click",
+      "target": "css=.more-link > a",
+      "targets": [
+        ["css=.more-link > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'View All')])[3]", "xpath:link"],
+        ["xpath=//section[@id='block-views-block-e-campaigns-e-mail-block-1']/div[2]/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/iec/foportal/latest-news')]", "xpath:href"],
+        ["xpath=//div[2]/div/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7d63102-bc44-49e8-9e52-ed6e80c396ee",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,163.3333282470703)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a25e859d-7b88-4e9b-9be5-1e9202942687",
+      "comment": "",
+      "command": "pause",
+      "target": "5000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8b93d742-7f4c-482b-99c1-14290c45f21d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Refer Circular",
+      "targets": [
+        ["linkText=Refer Circular", "linkText"],
+        ["css=.views-row:nth-child(2) .in-line > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Refer Circular')]", "xpath:link"],
+        ["xpath=//section[@id='block-views-block-latest-news-view-block-2']/div/div/div[3]/div[2]/div/span/div[3]/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.incometax.gov.in/iec/foportal/sites/default/files/2024-02/Circular-03-2023%201.pdf#')]", "xpath:href"],
+        ["xpath=//div[3]/span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Refer Circular')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win6755",
+      "windowTimeout": 2000
+    }, {
+      "id": "97c3d28b-8514-4ae2-8ceb-b70c5c1b3ae7",
+      "comment": "",
+      "command": "pause",
+      "target": "5000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b48a30fc-2641-41b6-ac2e-8ca7ec14002c",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win6755}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "fda35693-9bf2-4812-b022-b2fffb131c66",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a06c37c3-7aac-4a23-aee6-099cf9ddc649"]
+  }],
+  "urls": ["https://www.incometax.gov.in/"],
+  "plugins": []
+}
