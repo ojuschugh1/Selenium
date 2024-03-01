@@ -30,6 +30,10 @@ cd downloads
 
 
 2. Run the following command to execute the script:
+
+   m7 has https://main.sci.gov.in/  [Supreme Court of India Website]
+   
+   m5 has https://www.incometax.gov.in/ [Income Tax]
 selenium-side-runner m5.side
 
 OR
